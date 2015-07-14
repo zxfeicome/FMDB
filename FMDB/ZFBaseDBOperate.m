@@ -74,7 +74,7 @@ static FMDatabase *_fmdb;
     if (block) {
         block(tableSql);
     }
-    
+    //asdf
     
 }
 

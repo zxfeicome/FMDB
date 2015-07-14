@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0464E2D3-7140-45F9-9C69-1FF71E28852F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FMDB</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0BD0A85BDCA4CF589591EA99A4025B7A37CE4CEE</key>
+		<string>https://github.com/zxfeicome/FMDB.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FMDB.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0BD0A85BDCA4CF589591EA99A4025B7A37CE4CEE</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/zxfeicome/FMDB.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0BD0A85BDCA4CF589591EA99A4025B7A37CE4CEE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0BD0A85BDCA4CF589591EA99A4025B7A37CE4CEE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FMDB</string>
+		</dict>
+	</array>
+</dict>
+</plist>
