@@ -14,6 +14,8 @@
 		E99B69B41B2FF13600B880B2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E99B69B31B2FF13600B880B2 /* Images.xcassets */; };
 		E99B69B71B2FF13600B880B2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E99B69B51B2FF13600B880B2 /* LaunchScreen.xib */; };
 		E99B69C31B2FF13600B880B2 /* FMDBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E99B69C21B2FF13600B880B2 /* FMDBTests.m */; };
+		E99B69CE1B30021F00B880B2 /* ZFBaseDBOperate.m in Sources */ = {isa = PBXBuildFile; fileRef = E99B69CD1B30021F00B880B2 /* ZFBaseDBOperate.m */; };
+		F34962298976AF1C1F05F729 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 747732381444AB55587F8839 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09A70A579661E876D9570151 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		6B6435D4E8DA2B0656C0C39B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		747732381444AB55587F8839 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E99B69A31B2FF13600B880B2 /* FMDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FMDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E99B69A71B2FF13600B880B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E99B69A81B2FF13600B880B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +45,8 @@
 		E99B69BC1B2FF13600B880B2 /* FMDBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FMDBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E99B69C11B2FF13600B880B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E99B69C21B2FF13600B880B2 /* FMDBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMDBTests.m; sourceTree = "<group>"; };
+		E99B69CC1B30021F00B880B2 /* ZFBaseDBOperate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFBaseDBOperate.h; sourceTree = "<group>"; };
+		E99B69CD1B30021F00B880B2 /* ZFBaseDBOperate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBaseDBOperate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F34962298976AF1C1F05F729 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +68,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27369C64EC1E4E287DE7A426 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B6435D4E8DA2B0656C0C39B /* Pods.debug.xcconfig */,
+				09A70A579661E876D9570151 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		44C0753501595DF73135587A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				747732381444AB55587F8839 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E99B699A1B2FF13600B880B2 = {
 			isa = PBXGroup;
 			children = (
 				E99B69A51B2FF13600B880B2 /* FMDB */,
 				E99B69BF1B2FF13600B880B2 /* FMDBTests */,
 				E99B69A41B2FF13600B880B2 /* Products */,
+				27369C64EC1E4E287DE7A426 /* Pods */,
+				44C0753501595DF73135587A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +116,8 @@
 				E99B69B31B2FF13600B880B2 /* Images.xcassets */,
 				E99B69B51B2FF13600B880B2 /* LaunchScreen.xib */,
 				E99B69A61B2FF13600B880B2 /* Supporting Files */,
+				E99B69CC1B30021F00B880B2 /* ZFBaseDBOperate.h */,
+				E99B69CD1B30021F00B880B2 /* ZFBaseDBOperate.m */,
 			);
 			path = FMDB;
 			sourceTree = "<group>";
@@ -126,9 +155,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E99B69C61B2FF13600B880B2 /* Build configuration list for PBXNativeTarget "FMDB" */;
 			buildPhases = (
+				9918688505D2952D52C96065 /* Check Pods Manifest.lock */,
 				E99B699F1B2FF13600B880B2 /* Sources */,
 				E99B69A01B2FF13600B880B2 /* Frameworks */,
 				E99B69A11B2FF13600B880B2 /* Resources */,
+				09603778B490AA9297BA6EBF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,12 +245,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		09603778B490AA9297BA6EBF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9918688505D2952D52C96065 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E99B699F1B2FF13600B880B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E99B69AF1B2FF13600B880B2 /* ViewController.m in Sources */,
+				E99B69CE1B30021F00B880B2 /* ZFBaseDBOperate.m in Sources */,
 				E99B69AC1B2FF13600B880B2 /* AppDelegate.m in Sources */,
 				E99B69A91B2FF13600B880B2 /* main.m in Sources */,
 			);
@@ -347,9 +412,11 @@
 		};
 		E99B69C71B2FF13600B880B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B6435D4E8DA2B0656C0C39B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FMDB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -357,9 +424,11 @@
 		};
 		E99B69C81B2FF13600B880B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09A70A579661E876D9570151 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FMDB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -418,6 +487,7 @@
 				E99B69C81B2FF13600B880B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E99B69C91B2FF13600B880B2 /* Build configuration list for PBXNativeTarget "FMDBTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +496,7 @@
 				E99B69CB1B2FF13600B880B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
