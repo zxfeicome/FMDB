@@ -54,7 +54,7 @@ static FMDatabase *_fmdb;
     }
     return self;
 }
-//isHave代表是否有主键，主键在第 一 位
+//isHave代表是否有主键，主键在第一位
 -(void)getFMDBStr:(NSDictionary *)dataDic withBlock:(void (^)(NSString *tableStr))block
 {
     nameArr = [dataDic allKeys];
@@ -74,7 +74,7 @@ static FMDatabase *_fmdb;
     if (block) {
         block(tableSql);
     }
-    //asdf噶市公司
+    //asdf
     
 }
 
